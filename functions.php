@@ -568,6 +568,7 @@ function registered()
     $u = mysqli_query($conn, 'SELECT * FROM users ORDER BY id DESC ');
     while ($row = mysqli_fetch_array($u)) {
         echo '<tr>
+        <td>'.$row['id'].'</td>
 
         <td>
 
@@ -753,7 +754,7 @@ function totalstatus()
 function unpaid()
 {
     include 'starter.php';
-    $c = mysqli_query($conn, 'SELECT * FROM transactions');
+    $c = mysqli_query($conn, 'SELECT * FROM users WHERE paystatus="paid"');
     $count = mysqli_num_rows($c);
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);
@@ -763,7 +764,7 @@ function unpaid()
 function unpaidpercentage()
 {
     include 'starter.php';
-    $c = mysqli_query($conn, 'SELECT * FROM transactions');
+    $c = mysqli_query($conn, 'SELECT * FROM users WHERE paystatus="paid"');
     $count = mysqli_num_rows($c);
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);

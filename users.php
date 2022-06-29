@@ -58,13 +58,10 @@ $user = users();
     <!-- feather Awesome -->
     <!-- <link rel="stylesheet" type="text/css" href="default/files/assets/icon/feather/css/feather.css"> -->
     <!-- Data Table Css -->
-    <link rel="stylesheet" type="text/css"
-        href="default/files/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="default/files/bower_components/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" type="text/css" href="default/files/assets/pages/data-table/css/buttons.dataTables.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="default/files/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="default/files/assets/pages/data-table/extensions/buttons/css/buttons.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="default/files/bower_components/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="default/files/assets/pages/data-table/extensions/buttons/css/buttons.dataTables.min.css">
     <!-- Style.css -->
     <!-- <link rel="stylesheet" type="text/css" href="default/files/assets/css/style.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="default/files/assets/css/jquery.mCustomScrollbar.css"> -->
@@ -121,9 +118,10 @@ $user = users();
 
 
     <style>
-        #example th, td{
+        #example th,
+        td {
             border: 1px solid grey;
-            border-collapse:collapse;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -167,9 +165,9 @@ $user = users();
                     </ol>
                     <h1 class="h2">Users</h1>
 
-                    
 
-                    
+
+
 
 
 
@@ -181,86 +179,89 @@ $user = users();
 
 
                     <!-- datatable begins -->
-                    
+
                     <div class="row">
                         <div class="col-lg-8">
-                                <table id="example" style="background-color:#fff;">
-                                    <thead>
-                                        <tr>
-
-                                            <th>Name</th>
-
-                                            <!-- <th>Name</th> -->
-
-                                            <th >Email</th>
-                                            <th>Contact</th>
-                                            <th>Region</th>
-                                            <th>District</th>
-                                            <th>Training Date</th>
-                                            <th >License Number</th>
-                                            <th>Name of school</th>
-                                            <th>Payment Status</th>
-                                            <th>Confirmation</th>
-                                            <th>Food</th>
-                                            <th>Heard</th>
-                                            <th>Registration Date</th>
-                                            <th>Pay</th>
-                                            <th>Edit</th>
-
-                                            <th>Delete</th>
-                                            <!-- <th style="width: 51px;">Payment Status</th> -->
-                                            <!-- <th style="width: 51px;">delete</th> -->
+                            <table id="example" style="background-color:#fff;">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
 
 
-                                            <!-- <th style="width: 24px;"></th> -->
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <?php registered(); ?>
+                                        <th>Name</th>
 
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
+                                        <!-- <th>Name</th> -->
 
-                                            <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>Region</th>
+                                        <th>District</th>
+                                        <th>Training Date</th>
+                                        <th>License Number</th>
+                                        <th>Name of school</th>
+                                        <th>Payment Status</th>
+                                        <th>Confirmation</th>
+                                        <th>Food</th>
+                                        <th>Heard</th>
+                                        <th>Registration Date</th>
+                                        <th>Pay</th>
+                                        <th>Edit</th>
 
-                                            <th >Email</th>
-                                            <th>Contact</th>
-                                            <th>Region</th>
-                                            <th>District</th>
-                                            <th>Training Date</th>
-                                            <th >License Number</th>
-                                            <th>Name of school</th>
-                                            <th>Payment Status</th>
-                                            <th>Confirmation</th>
-                                            <th>Food</th>
-                                            <th>Heard</th>
-                                            <th>Registration Date</th>
-                                            <th>Pay</th>
-                                            <th>Edit</th>
-
-                                            <th>Delete</th>
-                                            <!-- <th style="width: 51px;">Payment Status</th> -->
-                                            
+                                        <th>Delete</th>
+                                        <!-- <th style="width: 51px;">Payment Status</th> -->
+                                        <!-- <th style="width: 51px;">delete</th> -->
 
 
-                                            <!-- <th style="width: 24px;"></th> -->
-                                        </tr>
-                                    </tfoot>
-                                </table>
+                                        <!-- <th style="width: 24px;"></th> -->
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php registered(); ?>
+
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>ID</th>
+
+                                        <th>Name</th>
+
+                                        <th>Email</th>
+                                        <th>Contact</th>
+                                        <th>Region</th>
+                                        <th>District</th>
+                                        <th>Training Date</th>
+                                        <th>License Number</th>
+                                        <th>Name of school</th>
+                                        <th>Payment Status</th>
+                                        <th>Confirmation</th>
+                                        <th>Food</th>
+                                        <th>Heard</th>
+                                        <th>Registration Date</th>
+                                        <th>Pay</th>
+                                        <th>Edit</th>
+
+                                        <th>Delete</th>
+                                        <!-- <th style="width: 51px;">Payment Status</th> -->
+
+
+
+                                        <!-- <th style="width: 24px;"></th> -->
+                                    </tr>
+                                </tfoot>
+                            </table>
                         </div>
                     </div>
 
 
 
 
-                    
-
-                    
 
 
 
-                    
+
+
+
+
 
 
 
@@ -482,12 +483,12 @@ $user = users();
     <script src="default/files/assets/pages/data-table/js/dataTables.bootstrap4.min.js"></script>
     <script src="default/files/bower_components/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
     <script src="default/files/bower_components/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-    <!-- <-- <i18next.min.js --> 
+    <!-- <-- <i18next.min.js -->
     <!-- <script type="text/javascript" src="default/files/bower_components/i18next/i18next.min.js"></script> -->
     <!-- <script type="text/javascript" -->
-        <!-- src="default/files/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script> -->
+    <!-- src="default/files/bower_components/i18next-xhr-backend/i18nextXHRBackend.min.js"></script> -->
     <!-- <script type="text/javascript" -->
-        <!-- src="default/files/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script> -->
+    <!-- src="default/files/bower_components/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script> -->
     <!-- <script type="text/javascript" src="default/files/bower_components/jquery-i18next/jquery-i18next.min.js"></script> -->
     <!-- Custom js -->
     <!-- <script src="default/files/assets/pages/data-table/extensions/buttons/js/extension-btns-custom.js"></script> -->
@@ -512,10 +513,10 @@ $user = users();
 
 
     <script src="processor.js"></script>
-    
 
 
-    
+
+
 
 
 
