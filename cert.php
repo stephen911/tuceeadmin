@@ -5,7 +5,7 @@ $yolk = new YolkPay();
 checker();
 $user = users();
 //  var_dump($_SESSION['id']);
-
+//temp
 // if (isset($_POST['btnupdate'])) {
 //     extract($_POST);
 //     updateuser($id, $title, $name, $gender, $email, $contact, $telegram, $lincesed, $nameofschool, $region, $district, $foodpref, $heard);
