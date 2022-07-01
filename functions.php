@@ -149,6 +149,7 @@ function settdate($tdate, $district)
 {
     include 'starter.php';
     // $id = $_GET['id'];
+    $tdate = date('jS F, Y', strtotime($tdate));
     $confiu = mysqli_query($conn, "UPDATE users SET tdate ='$tdate' WHERE district='$district'");
     if ($confiu) {
         echo 'Updated Successfully';
@@ -361,8 +362,8 @@ function countdistrict($district)
     $count2 = mysqli_num_rows($c);
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
-    echo '<h4 class="mb-0 text-success">('.round(($count / $count2) * 100 , 2).'%)</h4>';
+    echo $count;
+    echo '('.round(($count / $count2) * 100 , 2).'%)';
 
     // if ($confiu) {
     //     echo 'Updated Successfully';

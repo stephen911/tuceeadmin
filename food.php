@@ -817,10 +817,19 @@ $user = users();
                                 <div class="media align-items-center">
                                     <div class="media-body">
                                         <a class="text-body" href="#"><strong>Total Users</strong></a><br>
-                                        <!-- <div class="d-flex align-items-center">
-                                            <small class="text-black-50 text-uppercase mr-2">Course</small>
-                                            <a href="student-take-course.html">Angular in Steps</a>
-                                        </div> -->
+                                        <div class="d-flex align-items-center">
+                                            <!-- <small class="text-black-50 text-uppercase mr-2"><?php
+                                                                        if (isset($_POST['btnupdate'])) {
+                                                                            countdistrict($_POST['district']);
+                                                                        } else {
+                                                                            echo '0%';
+                                                                        }
+
+                                                                        
+
+                                                                        ?> of the total Users</small> -->
+                                            <!-- <a href="#">Angular in Steps</a> -->
+                                        </div>
                                     </div>
                                     <div class="media-right text-center d-flex align-items-center">
                                         <!-- <span class="text-black-50 mr-3">Great</span> -->
@@ -841,10 +850,10 @@ $user = users();
                                 <div class="media align-items-center">
                                     <div class="media-body">
                                         <a class="text-body" href="#"><strong>Paid Users</strong></a><br>
-                                        <!-- <div class="d-flex align-items-center">
-                                            <small class="text-black-50 text-uppercase mr-2">Course</small>
-                                            <a href="student-take-course.html">Angular in Steps</a>
-                                        </div> -->
+                                        <div class="d-flex align-items-center">
+                                            <!-- <small class="text-black-50 text-uppercase mr-2">Course</small> -->
+                                            <!-- <a href="student-take-course.html">Angular in Steps</a> -->
+                                        </div>
                                     </div>
                                     <div class="media-right text-center d-flex align-items-center">
                                         <!-- <span class="text-black-50 mr-3">Great</span> -->
