@@ -92,6 +92,11 @@ require 'functions.php';
             pay($id);
             break;
 
+        case 'dele':
+            extract($_POST);
+            dele($id);
+            break;
+
         default:
 
         break;

@@ -59,7 +59,7 @@ function users()
     include 'starter.php';
     // session_start();
     $id = $_SESSION['id'];
-    
+
     $d = mysqli_query($conn, "SELECT * FROM users WHERE id ='$id'");
     $row = mysqli_fetch_array($d);
 
@@ -73,7 +73,7 @@ function upusers()
     // session_start();
     // $id = $_SESSION['id'];
     $id = $_GET['id'];
-    
+
     $d = mysqli_query($conn, "SELECT * FROM users WHERE id ='$id'");
     $row = mysqli_fetch_array($d);
 
@@ -179,9 +179,8 @@ function dispaidstatstotal($district)
     include 'starter.php';
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND paystatus='paid'");
-    $count = mysqli_num_rows($c); 
-    echo '<h4 class="mb-0 text-success">Gh¢ '.$count * 70 .'</h4>';
-    
+    $count = mysqli_num_rows($c);
+    echo '<h4 class="mb-0 text-success">Gh¢ ' . $count * 70 . '</h4>';
 }
 
 function dispaidstatspertotal($district)
@@ -195,8 +194,7 @@ function dispaidstatspertotal($district)
 
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND paystatus='paid'");
     $count = mysqli_num_rows($c) * 70;
-    echo '<h4 class="mb-0 text-success">('.round(($count / $tot) * 100 , 2).'%)</h4>';
-
+    echo '<h4 class="mb-0 text-success">(' . round(($count / $tot) * 100, 2) . '%)</h4>';
 }
 
 function dispaidstats($district)
@@ -205,8 +203,8 @@ function dispaidstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND paystatus='paid'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
-    
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
+
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -223,7 +221,7 @@ function dispaidstatsper($district)
     $count2 = mysqli_num_rows($c);
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND paystatus='paid'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">('.round(($count / $count2) * 100 , 2).'%)</h4>';
+    echo '<h4 class="mb-0 text-success">(' . round(($count / $count2) * 100, 2) . '%)</h4>';
     // echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
@@ -243,8 +241,8 @@ function disunpaidstats($district)
     $count = mysqli_num_rows($c);
 
     $val = $count2 - $count;
-    echo '<h4 class="mb-0 text-success">'.$val.'</h4>';
-    
+    echo '<h4 class="mb-0 text-success">' . $val . '</h4>';
+
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -265,7 +263,7 @@ function disunpaidstatsper($district)
     $count = mysqli_num_rows($c);
 
     $val = $count2 - $count;
-    echo '<h4 class="mb-0 text-success">('.round(($val / $count2) * 100 , 2).'%)</h4>';
+    echo '<h4 class="mb-0 text-success">(' . round(($val / $count2) * 100, 2) . '%)</h4>';
     // echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
@@ -281,8 +279,7 @@ function disconfstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND confirm='confirmed'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
-
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
 }
 
 
@@ -295,7 +292,7 @@ function disconfstatsper($district)
     $count2 = mysqli_num_rows($c);
     $ci = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND confirm='confirmed'");
     $count = mysqli_num_rows($ci);
-    echo '<h4 class="mb-0 text-success">('.round(($count / $count2) * 100 , 2).'%)</h4>';
+    echo '<h4 class="mb-0 text-success">(' . round(($count / $count2) * 100, 2) . '%)</h4>';
 }
 
 
@@ -309,8 +306,8 @@ function disunconfstats($district)
     $count = mysqli_num_rows($ci);
 
     $val = $count2 - $count;
-    echo '<h4 class="mb-0 text-success">'.$val.'</h4>';
-    
+    echo '<h4 class="mb-0 text-success">' . $val . '</h4>';
+
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -329,7 +326,7 @@ function disunconfstatsper($district)
     $count = mysqli_num_rows($ci);
 
     $val = $count2 - $count;
-    echo '<h4 class="mb-0 text-success">('.round(($val / $count2) * 100 , 2).'%)</h4>';
+    echo '<h4 class="mb-0 text-success">(' . round(($val / $count2) * 100, 2) . '%)</h4>';
     // echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
@@ -345,7 +342,7 @@ function foodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with chicken'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -363,7 +360,7 @@ function countdistrict($district)
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district'");
     $count = mysqli_num_rows($c);
     echo $count;
-    echo '('.round(($count / $count2) * 100 , 2).'%)';
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
 
     // if ($confiu) {
     //     echo 'Updated Successfully';
@@ -378,7 +375,7 @@ function jpfoodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with chicken' AND paystatus='paid'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -395,7 +392,7 @@ function jcfoodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with chicken' AND confirm='confirmed'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -409,7 +406,7 @@ function gafoodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -424,7 +421,7 @@ function pgafoodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine' AND paystatus='paid'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -438,7 +435,7 @@ function cgafoodstats($district)
     // $id = $_GET['id'];
     $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine' AND confirm='confirmed'");
     $count = mysqli_num_rows($c);
-    echo '<h4 class="mb-0 text-success">'.$count.'</h4>';
+    echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -452,7 +449,7 @@ function sfoodstats($district)
     include 'starter.php';
     // $id = $_GET['id'];
 
-    echo '<h4 class="card-title">Food Statistics for '.$district.'</h4>';
+    echo '<h4 class="card-title">Food Statistics for ' . $district . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -465,7 +462,7 @@ function ssfoodstats($district)
     include 'starter.php';
     // $id = $_GET['id'];
 
-    echo '<h4 class="card-title">Statistics for '.$district.'</h4>';
+    echo '<h4 class="card-title">Statistics for ' . $district . '</h4>';
     // if ($confiu) {
     //     echo 'Updated Successfully';
     // } else {
@@ -541,7 +538,7 @@ function transactions()
             <div class="d-flex align-items-center">
                 <small class="text-uppercase text-muted mr-2">Transaction Amount</small>
                 <a href="student-invoice.php"
-                   class="text-body small"><span class="js-lists-values-document">'.$row['amount'].'</span></a>
+                   class="text-body small"><span class="js-lists-values-document">' . $row['amount'] . '</span></a>
             </div>
         </td>
         
@@ -555,7 +552,7 @@ function transactions()
         <td class="text-right">
             <div class="d-flex align-items-center text-right">
                 <small class="text-uppercase text-muted mr-2">Date</small>
-                <small class="text-uppercase js-lists-values-date">'.$row['dateadded'].'</small>
+                <small class="text-uppercase js-lists-values-date">' . $row['dateadded'] . '</small>
             </div>
         </td>
     </tr>';
@@ -569,32 +566,32 @@ function registered()
     $u = mysqli_query($conn, 'SELECT * FROM users ORDER BY id DESC ');
     while ($row = mysqli_fetch_array($u)) {
         echo '<tr>
-        <td>'.$row['id'].'</td>
+        <td>' . $row['id'] . '</td>
 
         <td>
 
-            <span class="js-lists-values-employee-name">'.$row['name'].'</span>
+            <span class="js-lists-values-employee-name">' . $row['name'] . '</span>
 
         </td>
 
-        <td>'.$row['email'].'</td>
-        <td>'.$row['contact'].'</td>
-        <td><span class="js-lists-values-employee-title">'.$row['region'].'</span></td>
-        <td><span class="js-lists-values-employee-district">'.$row['district'].'</span>
-        <td>'.$row['tdate'].'</td>
-        <td>'.$row['lincesed'].'</td>
-        <td>'.$row['nameofschool'].'</td>
-        <td><span class="js-lists-values-employee-paid">'.$row['paystatus'].'</span></td>  
-        <td>'.$row['confirm'].'</td>
+        <td>' . $row['email'] . '</td>
+        <td>' . $row['contact'] . '</td>
+        <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
+        <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
+        <td>' . $row['tdate'] . '</td>
+        <td>' . $row['lincesed'] . '</td>
+        <td>' . $row['nameofschool'] . '</td>
+        <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td>  
+        <td>' . $row['confirm'] . '</td>
 
-        <td>'.$row['foodpref'].'</td>
-        <td>'.$row['heard'].'</td>
+        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['heard'] . '</td>
 
-        <td>'.$row['dateadded'].'</td>
-        <td><button class="btn btn-success payme" id="'.$row['id'].'"><i class="fa fa-money-bill"></i></button></td>      
+        <td>' . $row['dateadded'] . '</td>
+        <td><button class="btn btn-success payme" id="' . $row['id'] . '"><i class="fa fa-money-bill"></i></button></td>      
 
-        <td><a class="btn btn-primary" href="update_user.php?id='.$row['id'].'"><i class="fa fa-edit"></i></a></td>      
-        <td><a class="btn btn-danger" href="delete_user.php?id='.$row['id'].'"><i class="fa fa-trash"></i></a></td>      
+        <td><a class="btn btn-primary" href="update_user.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>      
+        <td><button class="btn btn-danger delme" id=' . $row['id'] . '"><i class="fa fa-trash"></i></button></td>      
 
 
 
@@ -613,22 +610,22 @@ function paidusers()
 
         <td>
 
-            <span class="js-lists-values-employee-name">'.$row['name'].'</span>
+            <span class="js-lists-values-employee-name">' . $row['name'] . '</span>
 
         </td>
 
-        <td>'.$row['email'].'</td>
-        <td>'.$row['contact'].'</td>
-        <td><span class="js-lists-values-employee-title">'.$row['region'].'</span></td>
-        <td><span class="js-lists-values-employee-district">'.$row['district'].'</span>
-        <td>'.$row['tdate'].'</td>
-        <td>'.$row['lincesed'].'</td>
-        <td>'.$row['nameofschool'].'</td>
-        <td><span class="js-lists-values-employee-paid">'.$row['paystatus'].'</span></td>  
-        <td>'.$row['foodpref'].'</td>
-        <td>'.$row['dateadded'].'</td>
-        <td><a class="btn btn-success" href="update_user.php?id='.$row['id'].'"><i class="fa fa-edit"></i></a></td>      
-        <td><a class="btn btn-danger" href="delete_user.php?id='.$row['id'].'"><i class="fa fa-trash"></i></a></td>      
+        <td>' . $row['email'] . '</td>
+        <td>' . $row['contact'] . '</td>
+        <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
+        <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
+        <td>' . $row['tdate'] . '</td>
+        <td>' . $row['lincesed'] . '</td>
+        <td>' . $row['nameofschool'] . '</td>
+        <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td>  
+        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['dateadded'] . '</td>
+        <td><a class="btn btn-success" href="update_user.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>      
+        <td><a class="btn btn-danger" href="delete_user.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a></td>      
 
 
 
@@ -650,18 +647,18 @@ function trans()
 
         <td>
 
-            <span class="js-lists-values-employee-trans">'.$rr['name'].'</span>
+            <span class="js-lists-values-employee-trans">' . $rr['name'] . '</span>
 
         </td>
 
         
-        <td>'.$rr['contact'].'</td>
+        <td>' . $rr['contact'] . '</td>
 
 
 
-        <td>'.$row['transid'].'</td>
-        <td>'.$row['amount'].'</td>
-        <td>'.$row['dateadded'].'</td>
+        <td>' . $row['transid'] . '</td>
+        <td>' . $row['amount'] . '</td>
+        <td>' . $row['dateadded'] . '</td>
         
     </tr>';
     }
@@ -703,7 +700,7 @@ function cpercentage()
     $count2 = mysqli_num_rows($c2);
     // echo '('.(number_format((float)$count / $count2, '.', '')) * 100 .'%)';
 
-    echo '('.round(($count / $count2) * 100 , 2).'%)';
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
 }
 
 function ucpercentage()
@@ -714,8 +711,8 @@ function ucpercentage()
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);
 
-    $unc = $count2 -$count;
-    echo '('.round(($unc / $count2) * 100 , 2).'%)';
+    $unc = $count2 - $count;
+    echo '(' . round(($unc / $count2) * 100, 2) . '%)';
 }
 
 function countpaid()
@@ -739,7 +736,7 @@ function total()
     include 'starter.php';
     $c = mysqli_query($conn, 'SELECT * FROM transactions');
     $count = mysqli_num_rows($c);
-    echo 'Gh¢ '.$count* 70;
+    echo 'Gh¢ ' . $count * 70;
 }
 
 
@@ -748,7 +745,7 @@ function totalstatus()
     include 'starter.php';
     $c = mysqli_query($conn, 'SELECT * FROM users WHERE paystatus="paid"');
     $count = mysqli_num_rows($c);
-    echo 'Gh¢ '.$count* 70;
+    echo 'Gh¢ ' . $count * 70;
 }
 
 
@@ -770,7 +767,7 @@ function unpaidpercentage()
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);
     $unp = $count2 - $count;
-    echo '('.round(($unp / $count2) * 100 , 2).'%)';
+    echo '(' . round(($unp / $count2) * 100, 2) . '%)';
 }
 
 
@@ -781,7 +778,7 @@ function percentage()
     $count = mysqli_num_rows($c);
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);
-    echo '('.round(($count / $count2) * 100 , 2).'%)';
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
 }
 
 function percentagestatus()
@@ -791,20 +788,34 @@ function percentagestatus()
     $count = mysqli_num_rows($c);
     $c2 = mysqli_query($conn, 'SELECT * FROM users');
     $count2 = mysqli_num_rows($c2);
-    echo '('.round(($count / $count2) * 100 , 2).'%)';
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
 }
 
-function pay($id){
+function pay($id)
+{
     include 'starter.php';
     $transid  = uniqid('MOMO');
     $dateadded = date('jS F, Y');
-    $p = mysqli_query($conn,'UPDATE users SET paystatus = "paid" WHERE id ="'.$id.'"');
-    $q = mysqli_query($conn,"INSERT INTO transactions (uid,transid,amount,dateadded) VALUES('$id','$transid','70','$dateadded')");
+    $p = mysqli_query($conn, 'UPDATE users SET paystatus = "paid" WHERE id ="' . $id . '"');
+    $q = mysqli_query($conn, "INSERT INTO transactions (uid,transid,amount,dateadded) VALUES('$id','$transid','70','$dateadded')");
 
-    if($p && $q){
+    if ($p && $q) {
         echo 'payadded';
-    }
-    else{
+    } else {
         echo 'Failed to add payment';
+    }
+}
+
+
+function dele($id)
+{
+    include 'starter.php';
+    // $id = $_GET['id'];
+    $del = mysqli_query($conn, "DELETE FROM users WHERE id = '$id'");
+
+    if ($del) {
+        echo 'userdele';
+    } else {
+        echo 'failed';
     }
 }

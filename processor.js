@@ -226,6 +226,24 @@ $(function(){
           });
 
     }
+    else if(response == 'userdele'){
+
+      swal({
+          title: "Success",
+          text: "User Deleted Successfully",
+          timer: 1000,
+          type: 'success',
+          padding: "2em",
+          onOpen: function () {
+            swal.showLoading();
+          },
+        }).then(function (result) {
+          window.location="users.php";
+        });
+
+  }
+
+   
 
 
         else if(response == 'loginfailed'){
@@ -475,22 +493,155 @@ $('.register').submit(function(e){
 
 $(document).on("click", ".payme", function(e) {
   e.preventDefault();
-  var staff = {
-    url: 'processor.php?action=pay',
-    type: 'post',
-    data: {'id' : $(this).attr('id')},
-    // cache: false,
-    // contentType: false,
-    // processData: false,
-    beforeSend: before,
-    success: resp
 
-};
-$.ajax(staff);
-  
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, Added Payment!'
+  }).then((result) => {
+    
+    if (result.isConfirmed) {
+      var staff = {
+        url: 'processor.php?action=pay',
+        type: 'post',
+        data: {'id' : $(this).attr('id')},
+        // cache: false,
+        // contentType: false,
+        // processData: false,
+        beforeSend: before,
+        success: resp
+    
+    };
+    $.ajax(staff);
+      // Swal.fire(
+      //   'Deleted!',
+      //   'Your file has been deleted.',
+      //   'success'
+      // )
+    }
+  })
 
-  
 });
+
+
+
+$(document).on("click", ".delme", function(e) {
+  e.preventDefault();
+
+  Swal.fire({
+    title: 'Are you sure?',
+    text: "You won't be able to revert this!",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Yes, Delete User!'
+  }).then((result) => {
+    
+    if (result.isConfirmed) {
+      var staff = {
+        url: 'processor.php?action=dele',
+        type: 'post',
+        data: {'id' : $(this).attr('id')},
+        // cache: false,
+        // contentType: false,
+        // processData: false,
+        beforeSend: before,
+        success: resp
+    
+    };
+    $.ajax(staff);
+      Swal.fire(
+        'Deleted!',
+        'Your file has been deleted.',
+        'success'
+      )
+    }
+  })
+
+});
+//   swal({
+
+//     title: "Are you sure?",
+//     text: "You want to confirm payment",
+//     icon: "warning",
+//     buttons: ["Yes", "No"],
+//     // type: "warning",
+//     // showDenyButton: true,
+//     // showCancelButton: true,
+//     // confirmButtonText: "yes",
+//     // denyButtonTet: "No"
+//     // showCancelButton: true,
+//     // confirmButtonColor: '#DD6B55',
+//     // confirmButtonText: 'Yes, I am sure!',
+//     // denyButtonText: "No, cancel it!",
+//     // closeOnConfirm: false,
+//     // closeOnCancel: false
+//     dangerMode: true,
+//  }).then((result)=>{
+//   // alert(result.isDenied);
+//     // swal("Shortlisted", "Candidates are successfully shortlisted!", "success");
+
+
+//    if (result){
+//      var staff = {
+//       url: 'processor.php?action=pay',
+//       type: 'post',
+//       data: {'id' : $(this).attr('id')},
+//       // cache: false,
+//       // contentType: false,
+//       // processData: false,
+//       beforeSend: before,
+//       success: resp
+  
+//   };
+//   $.ajax(staff);
+//   // swal("Shortlisted!", "Candidates are successfully shortlisted!", "success");
+
+
+//     } else {
+//       swal("Cancelled", "Action Cancelled", "error");
+//     }
+//  });
+  
+// $.ajax(staff1);
+  
+
+  
+
+
+// document.querySelector('#from1').addEventListener('submit', function(e) {
+//   var form = this;
+
+//   e.preventDefault(); // <--- prevent form from submitting
+
+//   swal({
+//       title: "Are you sure?",
+//       text: "You will not be able to recover this imaginary file!",
+//       icon: "warning",
+//       buttons: [
+//         'No, cancel it!',
+//         'Yes, I am sure!'
+//       ],
+//       dangerMode: true,
+//     }).then(function(isConfirm) {
+//       if (isConfirm) {
+//         swal({
+//           title: 'Shortlisted!',
+//           text: 'Candidates are successfully shortlisted!',
+//           icon: 'success'
+//         }).then(function() {
+//           form.submit(); // <--- submit form programmatically
+//         });
+//       } else {
+//         swal("Cancelled", "Your imaginary file is safe :)", "error");
+//       }
+//     })
+// });
 
 // $('.payme').click(function(e) {
 //   e.preventDefault();
