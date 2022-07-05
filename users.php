@@ -204,6 +204,9 @@ $user = users();
                                         <th>Name of school</th>
                                         <th>Payment Status</th>
                                         <th>Confirmation</th>
+                                        <th>Enrollment</th>
+
+
                                         <th>Food</th>
                                         <th>Heard</th>
                                         <th>Registration Date</th>
@@ -237,6 +240,7 @@ $user = users();
                                         <th>Name of school</th>
                                         <th>Payment Status</th>
                                         <th>Confirmation</th>
+                                        <th>Enrollment</th>
                                         <th>Food</th>
                                         <th>Heard</th>
                                         <th>Registration Date</th>

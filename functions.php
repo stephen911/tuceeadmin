@@ -583,6 +583,8 @@ function registered()
         <td>' . $row['nameofschool'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td>  
         <td>' . $row['confirm'] . '</td>
+        <td>' . $row['enroll'] . '</td>
+
 
         <td>' . $row['foodpref'] . '</td>
         <td>' . $row['heard'] . '</td>
