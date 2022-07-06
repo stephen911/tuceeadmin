@@ -214,6 +214,36 @@ $user = users();
                             <li class="list-group-item">
                                 <div class="media align-items-center">
                                     <div class="media-body">
+                                        <a class="text-body" href="#"><strong>Enrolled Users</strong></a><br>
+                                        <!-- <div class="d-flex align-items-center">
+                                            <small class="text-black-50 text-uppercase mr-2">Course</small>
+                                            <a href="student-take-course.html">Angular in Steps</a>
+                                        </div> -->
+                                    </div>
+                                    <div class="media-right text-center d-flex align-items-center">
+                                        <!-- <span class="text-black-50 mr-3">Great</span> -->
+                                        <h4 class="mb-0 text-success"><?php enrolledusers(); ?></h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <a class="text-body" href="#"><strong>Attendance</strong></a><br>
+                                        <!-- <div class="d-flex align-items-center">
+                                            <small class="text-black-50 text-uppercase mr-2">Course</small>
+                                            <a href="student-take-course.html">Angular in Steps</a>
+                                        </div> -->
+                                    </div>
+                                    <div class="media-right text-center d-flex align-items-center">
+                                        <!-- <span class="text-black-50 mr-3">Great</span> -->
+                                        <h4 class="mb-0 text-success"><?php attendedusers(); ?></h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
                                         <a class="text-body" href="#"><strong>Paid Users</strong></a><br>
                                         <!-- <div class="d-flex align-items-center">
                                             <small class="text-black-50 text-uppercase mr-2">Course</small>

@@ -43,7 +43,7 @@ $user = users();
 
 
 
-//good
+    //good
 
 
     <!-- <link rel="icon" href="default/files/assets/images/favicon.ico" type="image/x-icon"> -->
@@ -819,15 +819,15 @@ $user = users();
                                         <a class="text-body" href="#"><strong>Total Users</strong></a><br>
                                         <div class="d-flex align-items-center">
                                             <!-- <small class="text-black-50 text-uppercase mr-2"><?php
-                                                                        if (isset($_POST['btnupdate'])) {
-                                                                            countdistrict($_POST['district']);
-                                                                        } else {
-                                                                            echo '0%';
-                                                                        }
+                                                                                                    if (isset($_POST['btnupdate'])) {
+                                                                                                        countdistrict($_POST['district']);
+                                                                                                    } else {
+                                                                                                        echo '0%';
+                                                                                                    }
 
-                                                                        
 
-                                                                        ?> of the total Users</small> -->
+
+                                                                                                    ?> of the total Users</small> -->
                                             <!-- <a href="#">Angular in Steps</a> -->
                                         </div>
                                     </div>
@@ -840,7 +840,73 @@ $user = users();
                                                                             echo '0';
                                                                         }
 
-                                                                        
+
+
+                                                                        ?></h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <a class="text-body" href="#"><strong>Enrolled Users</strong></a><br>
+                                        <div class="d-flex align-items-center">
+                                            <!-- <small class="text-black-50 text-uppercase mr-2"><?php
+                                                                                                    if (isset($_POST['btnupdate'])) {
+                                                                                                        enrolledcountdistrict($_POST['district']);
+                                                                                                    } else {
+                                                                                                        echo '0%';
+                                                                                                    }
+
+
+
+                                                                                                    ?> of the total Users</small> -->
+                                            <!-- <a href="#">Angular in Steps</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="media-right text-center d-flex align-items-center">
+                                        <!-- <span class="text-black-50 mr-3">Great</span> -->
+                                        <h4 class="mb-0 text-success"><?php
+                                                                        if (isset($_POST['btnupdate'])) {
+                                                                            enrolledcountdistrict($_POST['district']);
+                                                                        } else {
+                                                                            echo '0';
+                                                                        }
+
+
+
+                                                                        ?></h4>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media align-items-center">
+                                    <div class="media-body">
+                                        <a class="text-body" href="#"><strong>Attendance</strong></a><br>
+                                        <div class="d-flex align-items-center">
+                                            <!-- <small class="text-black-50 text-uppercase mr-2"><?php
+                                                                                                    if (isset($_POST['btnupdate'])) {
+                                                                                                        attendedcountdistrict($_POST['district']);
+                                                                                                    } else {
+                                                                                                        echo '0%';
+                                                                                                    }
+
+
+
+                                                                                                    ?> of the total Users</small> -->
+                                            <!-- <a href="#">Angular in Steps</a> -->
+                                        </div>
+                                    </div>
+                                    <div class="media-right text-center d-flex align-items-center">
+                                        <!-- <span class="text-black-50 mr-3">Great</span> -->
+                                        <h4 class="mb-0 text-success"><?php
+                                                                        if (isset($_POST['btnupdate'])) {
+                                                                            attendedcountdistrict($_POST['district']);
+                                                                        } else {
+                                                                            echo '0';
+                                                                        }
+
+
 
                                                                         ?></h4>
                                     </div>
@@ -1332,7 +1398,7 @@ $user = users();
     </div>
 
 
-  
+
 
     <!-- jQuery -->
     <script src="assets/vendor/jquery.min.js"></script>

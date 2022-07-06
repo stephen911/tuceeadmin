@@ -86,6 +86,12 @@ require 'functions.php';
                 changepass($id, $password, $newpass);
             }
                 break;
+        
+
+        case 'attend':
+            extract($_POST);
+            attend($id);
+            break;
 
         case 'pay':
             extract($_POST);

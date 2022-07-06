@@ -369,6 +369,44 @@ function countdistrict($district)
     // }
 }
 
+
+function enrolledcountdistrict($district)
+{
+    include 'starter.php';
+    // $id = $_GET['id'];
+    $c = mysqli_query($conn, "SELECT * FROM users");
+    $count2 = mysqli_num_rows($c);
+    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND enroll='enrolled'");
+    $count = mysqli_num_rows($c);
+    echo $count;
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
+
+    // if ($confiu) {
+    //     echo 'Updated Successfully';
+    // } else {
+    //     echo 'Failed to update record . Try again';
+    // }
+}
+
+
+function attendedcountdistrict($district)
+{
+    include 'starter.php';
+    // $id = $_GET['id'];
+    $c = mysqli_query($conn, "SELECT * FROM users");
+    $count2 = mysqli_num_rows($c);
+    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND attendance='Yes'");
+    $count = mysqli_num_rows($c);
+    echo $count;
+    echo '(' . round(($count / $count2) * 100, 2) . '%)';
+
+    // if ($confiu) {
+    //     echo 'Updated Successfully';
+    // } else {
+    //     echo 'Failed to update record . Try again';
+    // }
+}
+
 function jpfoodstats($district)
 {
     include 'starter.php';
@@ -588,8 +626,12 @@ function registered()
 
         <td>' . $row['foodpref'] . '</td>
         <td>' . $row['heard'] . '</td>
+        <td>' . $row['attendance'] . '</td>
+
 
         <td>' . $row['dateadded'] . '</td>
+        <td><button class="btn btn-info attend" id="' . $row['id'] . '"><i class="fa fa-info"></i></button></td>      
+
         <td><button class="btn btn-success payme" id="' . $row['id'] . '"><i class="fa fa-money-bill"></i></button></td>      
 
         <td><a class="btn btn-primary" href="update_user.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>      
@@ -672,6 +714,23 @@ function countusers()
     $c = mysqli_query($conn, 'SELECT * FROM users');
     $count = mysqli_num_rows($c);
     echo $count;
+}
+
+
+function enrolledusers()
+{
+    include 'starter.php';
+    $c = mysqli_query($conn, 'SELECT * FROM users WHERE enroll="enrolled"');
+    $count3 = mysqli_num_rows($c);
+    echo $count3;
+}
+
+function attendedusers()
+{
+    include 'starter.php';
+    $c = mysqli_query($conn, 'SELECT * FROM users WHERE attendance="Yes"');
+    $count3 = mysqli_num_rows($c);
+    echo $count3;
 }
 
 
@@ -803,6 +862,22 @@ function pay($id)
 
     if ($p && $q) {
         echo 'payadded';
+    } else {
+        echo 'Failed to add payment';
+    }
+}
+
+
+function attend($id)
+{
+    include 'starter.php';
+    // $transid  = uniqid('MOMO');
+    // $dateadded = date('jS F, Y');
+    $p = mysqli_query($conn, 'UPDATE users SET attendance = "Yes" WHERE id ="' . $id . '"');
+    // $q = mysqli_query($conn, "INSERT INTO transactions (uid,transid,amount,dateadded) VALUES('$id','$transid','70','$dateadded')");
+
+    if ($p) {
+        echo 'attended';
     } else {
         echo 'Failed to add payment';
     }
