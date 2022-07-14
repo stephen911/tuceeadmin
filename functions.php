@@ -442,7 +442,7 @@ function gafoodstats($district)
 {
     include 'starter.php';
     // $id = $_GET['id'];
-    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine'");
+    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with Fish'");
     $count = mysqli_num_rows($c);
     echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
@@ -457,7 +457,7 @@ function pgafoodstats($district)
 {
     include 'starter.php';
     // $id = $_GET['id'];
-    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine' AND paystatus='paid'");
+    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with Fish' AND paystatus='paid'");
     $count = mysqli_num_rows($c);
     echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
@@ -471,7 +471,7 @@ function cgafoodstats($district)
 {
     include 'starter.php';
     // $id = $_GET['id'];
-    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Ga-kenkey with Sardine' AND confirm='confirmed'");
+    $c = mysqli_query($conn, "SELECT * FROM users WHERE district='$district' AND foodpref='Jollof with Fish' AND confirm='confirmed'");
     $count = mysqli_num_rows($c);
     echo '<h4 class="mb-0 text-success">' . $count . '</h4>';
     // if ($confiu) {
@@ -617,15 +617,13 @@ function registered()
         <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
         <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
         <td>' . $row['tdate'] . '</td>
-        <td>' . $row['lincesed'] . '</td>
-        <td>' . $row['nameofschool'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td>  
         <td>' . $row['confirm'] . '</td>
         <td>' . $row['enroll'] . '</td>
 
 
         <td>' . $row['foodpref'] . '</td>
-        <td>' . $row['heard'] . '</td>
+ 
         <td>' . $row['attendance'] . '</td>
 
 

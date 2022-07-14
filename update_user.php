@@ -845,7 +845,7 @@ $user = upusers();
                                                             <option value="Waakye with chicken">Waakye with chicken</option>
                                                             <option value="Jollof with chicken">Jollof with chicken</option>
                                                             <option value="plain rice with chicken">plain rice with chicken</option>
-                                                            <option value="Ga-kenkey with Sardine">Ga-kenkey with Sardine</option>
+                                                            <option value="Jollof with Fish">Jollof with Fish</option>
 
 
                                                         </select>

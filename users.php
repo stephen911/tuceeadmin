@@ -200,24 +200,21 @@ $user = users();
                                         <th>Region</th>
                                         <th>District</th>
                                         <th>Training Date</th>
-                                        <th>License Number</th>
-                                        <th>Name of school</th>
+                                        <!-- <th>License Number</th> -->
+                                        <!-- <th>Name of school</th> -->
                                         <th>Payment Status</th>
                                         <th>Confirmation</th>
                                         <th>Enrollment</th>
 
 
                                         <th>Food</th>
-                                        <th>Heard</th>
-                                        <th>Attendanced</th>
+                                        <!-- <th>Heard</th> -->
+                                        <th>Attendance</th>
 
                                         <th>Registration Date</th>
                                         <th>Mark Att.</th>
-
-
                                         <th>Pay</th>
                                         <th>Edit</th>
-
                                         <th>Delete</th>
                                         <!-- <th style="width: 51px;">Payment Status</th> -->
                                         <!-- <th style="width: 51px;">delete</th> -->
@@ -241,14 +238,14 @@ $user = users();
                                         <th>Region</th>
                                         <th>District</th>
                                         <th>Training Date</th>
-                                        <th>License Number</th>
-                                        <th>Name of school</th>
+                                        <!-- <th>License Number</th> -->
+                                        <!-- <th>Name of school</th> -->
                                         <th>Payment Status</th>
                                         <th>Confirmation</th>
                                         <th>Enrollment</th>
                                         <th>Food</th>
                                         <th>Heard</th>
-                                        <th>Attendanced</th>
+                                        <th>Attendance</th>
 
                                         <th>Registration Date</th>
                                         <th>Mark Att.</th>

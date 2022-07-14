@@ -1119,7 +1119,7 @@ $user = users();
                             <li class="list-group-item">
                                 <div class="media align-items-center">
                                     <div class="media-body">
-                                        <a class="text-body" href="#"><strong>Ga-kenkey with Sardine(All)</strong></a><br>
+                                        <a class="text-body" href="#"><strong>Jollof with Fish(All)</strong></a><br>
                                         <!-- <div class="d-flex align-items-center">
                                             <small class="text-black-50 text-uppercase mr-2">Course</small>
                                             <a href="student-take-course.html">Angular in Steps</a>
@@ -1163,7 +1163,7 @@ $user = users();
                             <li class="list-group-item">
                                 <div class="media align-items-center">
                                     <div class="media-body">
-                                        <a class="text-body" href="#"><strong>Ga-kenkey with Sardine(Paid)</strong></a><br>
+                                        <a class="text-body" href="#"><strong>Jollof with Fish(Paid)</strong></a><br>
                                         <!-- <div class="d-flex align-items-center">
                                             <small class="text-black-50 text-uppercase mr-2">Course</small>
                                             <a href="student-take-course.html">Angular in Steps</a>
@@ -1207,7 +1207,7 @@ $user = users();
                             <li class="list-group-item">
                                 <div class="media align-items-center">
                                     <div class="media-body">
-                                        <a class="text-body" href="#"><strong>Ga-kenkey with Sardine(Confirmed)</strong></a><br>
+                                        <a class="text-body" href="#"><strong>Jollof with Fish(Confirmed)</strong></a><br>
                                         <!-- <div class="d-flex align-items-center">
                                             <small class="text-black-50 text-uppercase mr-2">Course</small>
                                             <a href="student-take-course.html">Angular in Steps</a>
