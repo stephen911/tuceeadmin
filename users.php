@@ -203,12 +203,14 @@ $user = users();
                                         <!-- <th>License Number</th> -->
                                         <!-- <th>Name of school</th> -->
                                         <th>Payment Status</th>
+                                        <th>Payment Date</th>
+
                                         <th>Confirmation</th>
                                         <th>Enrollment</th>
 
 
                                         <th>Food</th>
-                                        <!-- <th>Heard</th> -->
+                                        <!-- <th>Payment Date</th> -->
                                         <th>Attendance</th>
 
                                         <th>Registration Date</th>
@@ -241,10 +243,12 @@ $user = users();
                                         <!-- <th>License Number</th> -->
                                         <!-- <th>Name of school</th> -->
                                         <th>Payment Status</th>
+                                        <th>Payment Date</th>
+
                                         <th>Confirmation</th>
                                         <th>Enrollment</th>
                                         <th>Food</th>
-                                        <th>Heard</th>
+                                        <!-- <th>Payment Date</th> -->
                                         <th>Attendance</th>
 
                                         <th>Registration Date</th>
