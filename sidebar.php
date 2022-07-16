@@ -1,4 +1,3 @@
-
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="mdk-drawer js-mdk-drawer" id="default-drawer">
@@ -7,11 +6,26 @@
             <div class="sidebar-p-y">
                 <div class="sidebar-heading">APPLICATIONS</div>
                 <ul class="sidebar-menu sm-button-bg">
-                    <li class="sidebar-menu-item active">
+                    <?php
+                    if ($user['type'] == 'assist') {
+                        echo '<li class="sidebar-menu-item active">
                         <a class="sidebar-menu-button" href="dashboard.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Dashboard
                         </a>
                     </li>
+                    <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="users.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
+                            </a>
+                        </li>';
+                    } else {
+                        echo '<li class="sidebar-menu-item active">
+                        <a class="sidebar-menu-button" href="dashboard.php">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Dashboard
+                        </a>
+                    </li>
+
+                    
                     <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="users.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
@@ -49,7 +63,9 @@
                         <a class="sidebar-menu-button" href="training.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Training Date
                         </a>
-                    </li>
+                    </li>';
+                    }
+                    ?>
                     <!-- <li class="sidebar-menu-item active">
                                             <a class="sidebar-menu-button"
                                                href="renewal.php">
@@ -71,13 +87,13 @@
                                         <span class="sidebar-menu-text">NTC CPD Training</span>
                                     </a>
                                 </li> -->
-                                <!-- <li class="sidebar-menu-item">
+                    <!-- <li class="sidebar-menu-item">
                                                     <a class="sidebar-menu-button"
                                                        href="dashboard.php">
                                                         <span class="sidebar-menu-text">Basic Information</span>
                                                     </a>
                                                 </li> -->
-                                <!-- <li class="sidebar-menu-item">
+                    <!-- <li class="sidebar-menu-item">
                                                     <a class="sidebar-menu-button"
                                                        href="training.php">
                                                         <span class="sidebar-menu-text">Counselling Training</span>
@@ -93,8 +109,8 @@
 
 
 
-                            <!-- </ul> -->
-                        <!-- <li class="sidebar-menu-item active">
+                    <!-- </ul> -->
+                    <!-- <li class="sidebar-menu-item active">
                             <a class="sidebar-menu-button" href="payment.php">
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">credit_card</i> Payment
                             </a>

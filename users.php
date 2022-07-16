@@ -1,7 +1,7 @@
 <?php
 include 'functions.php';
 checker();
-$user = users();
+$user = adminusers();
 //  var_dump($_SESSION['id']);
 ?>
 <!DOCTYPE html>
@@ -187,82 +187,165 @@ $user = users();
                         <div class="col-lg-8">
                             <table id="example" style="background-color:#fff;">
                                 <thead>
-                                    <tr>
-                                        <th>ID</th>
+                                <?php
+                        if ($user['type'] == '') {
+                            echo '<tr>
+                            <th>ID</th>
 
 
-                                        <th>Name</th>
+                            <th>Name</th>
 
-                                        <!-- <th>Name</th> -->
+                            <!-- <th>Name</th> -->
 
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Region</th>
-                                        <th>District</th>
-                                        <th>Training Date</th>
-                                        <!-- <th>License Number</th> -->
-                                        <!-- <th>Name of school</th> -->
-                                        <th>Payment Status</th>
-                                        <th>Payment Date</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
 
-                                        <th>Confirmation</th>
-                                        <th>Enrollment</th>
-
-
-                                        <th>Food</th>
-                                        <!-- <th>Payment Date</th> -->
-                                        <th>Attendance</th>
-
-                                        <th>Registration Date</th>
-                                        <th>Mark Att.</th>
-                                        <th>Pay</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                        <!-- <th style="width: 51px;">Payment Status</th> -->
-                                        <!-- <th style="width: 51px;">delete</th> -->
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
 
 
-                                        <!-- <th style="width: 24px;"></th> -->
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php registered(); ?>
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
 
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>ID</th>
-
-                                        <th>Name</th>
-
-                                        <th>Email</th>
-                                        <th>Contact</th>
-                                        <th>Region</th>
-                                        <th>District</th>
-                                        <th>Training Date</th>
-                                        <!-- <th>License Number</th> -->
-                                        <!-- <th>Name of school</th> -->
-                                        <th>Payment Status</th>
-                                        <th>Payment Date</th>
-
-                                        <th>Confirmation</th>
-                                        <th>Enrollment</th>
-                                        <th>Food</th>
-                                        <!-- <th>Payment Date</th> -->
-                                        <th>Attendance</th>
-
-                                        <th>Registration Date</th>
-                                        <th>Mark Att.</th>
-                                        <th>Pay</th>
-                                        <th>Edit</th>
-
-                                        <th>Delete</th>
-                                        <!-- <th style="width: 51px;">Payment Status</th> -->
+                            <th>Registration Date</th>
+                            <th>Mark Att.</th>
+                            <th>Pay</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+                            <!-- <th style="width: 51px;">delete</th> -->
 
 
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>';
+                    echo registered();
+                echo '
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
 
-                                        <!-- <th style="width: 24px;"></th> -->
-                                    </tr>
+                            <th>Name</th>
+
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
+
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
+
+                            <th>Registration Date</th>
+                            <th>Mark Att.</th>
+                            <th>Pay</th>
+                            <th>Edit</th>
+
+                            
+                            
+
+                            <th>Delete</th>
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+
+
+
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>';
+                        } else {
+                            echo '<tr>
+                            <th>ID</th>
+
+
+                            <th>Name</th>
+
+                            <!-- <th>Name</th> -->
+
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
+
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
+
+
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
+
+                            <th>Registration Date</th>
+                            <th>Mark Att.</th>
+                           
+                            <th>Delete</th>
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+                            <!-- <th style="width: 51px;">delete</th> -->
+
+
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>';
+                        echo assistregistered();
+                    echo '
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
+
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
+
+                            <th>Registration Date</th>
+                            <th>Mark Att.</th>
+                            
+
+                            <th>Delete</th>
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+
+
+
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>';
+                        }
+                        ?>
+                                    
                                 </tfoot>
                             </table>
                         </div>
