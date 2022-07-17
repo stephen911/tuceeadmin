@@ -668,6 +668,62 @@ function registered()
 }
 
 
+
+function paymentregistered()
+{
+    include 'starter.php';
+    $u = mysqli_query($conn, 'SELECT * FROM users ORDER BY id DESC ');
+    // $y = mysqli_query($conn, 'SELECT * FROM transactions ORDER BY uid DESC ');
+
+    while ($row = mysqli_fetch_array($u)) {
+        $y = mysqli_query($conn, 'SELECT * FROM transactions WHERE uid = '. $row['id'] .' ');
+
+        $row2 = mysqli_fetch_array($y);
+        echo '<tr>
+        <td>' . $row['id'] . '</td>
+
+        <td>
+
+            <span class="js-lists-values-employee-name">' . $row['name'] . '</span>
+
+        </td>
+
+        <td>' . $row['email'] . '</td>
+        <td>' . $row['contact'] . '</td>
+        <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
+        <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
+        <td>' . $row['tdate'] . '</td>
+        <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td> ';
+        if(isset($row2['dateadded'])){
+            echo '<td>' . $row2['dateadded'] . '</td>';
+        }else{
+            echo '<td></td>';
+        }
+        echo '
+        <td>' . $row['confirm'] . '</td>
+        <td>' . $row['enroll'] . '</td>
+
+
+        <td>' . $row['foodpref'] . '</td>
+
+ 
+        <td>' . $row['attendance'] . '</td>
+
+
+        <td>' . $row['dateadded'] . '</td>
+        <td><button class="btn btn-success payme" id="' . $row['id'] . '"><i class="fa fa-money-bill"></i></button></td>      
+
+        
+
+
+
+
+                                        
+    </tr>';
+    }
+}
+
+
 function assistregistered()
 {
     include 'starter.php';

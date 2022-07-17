@@ -268,7 +268,88 @@ $user = adminusers();
 
                             <!-- <th style="width: 24px;"></th> -->
                         </tr>';
-                        } else {
+                        } else if($user['type'] == 'pay'){
+
+                            echo '<tr>
+                            <th>ID</th>
+
+
+                            <th>Name</th>
+
+                            <!-- <th>Name</th> -->
+
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
+
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
+
+
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
+
+                            <th>Registration Date</th>
+                            <th>Add payment</th>
+
+                            
+                           
+                            
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+                            <!-- <th style="width: 51px;">delete</th> -->
+
+
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>
+                    </thead>
+                    <tbody>';
+                        echo paymentregistered();
+                    echo '
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Region</th>
+                            <th>District</th>
+                            <th>Training Date</th>
+                            <!-- <th>License Number</th> -->
+                            <!-- <th>Name of school</th> -->
+                            <th>Payment Status</th>
+                            <th>Payment Date</th>
+
+                            <th>Confirmation</th>
+                            <th>Enrollment</th>
+                            <th>Food</th>
+                            <!-- <th>Payment Date</th> -->
+                            <th>Attendance</th>
+
+                            <th>Registration Date</th>
+                            <th>Add payment</th>
+
+                            
+
+                            <!-- <th style="width: 51px;">Payment Status</th> -->
+
+
+
+                            <!-- <th style="width: 24px;"></th> -->
+                        </tr>';
+
+                        }
+                        
+                        else {
                             echo '<tr>
                             <th>ID</th>
 
