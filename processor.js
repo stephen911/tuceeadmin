@@ -117,7 +117,7 @@ $(function () {
       });
     } else if (response == "loginsuccess") {
       swal({
-        title: "Login Successfull!",
+        title: "Login Successful!",
         text: "will be redirected soon",
         timer: 2000,
         type: "success",
@@ -126,7 +126,7 @@ $(function () {
           swal.showLoading();
         },
       }).then(function (result) {
-        window.location = "dashboard.php";
+        window.location = "users.php";
       });
     } else if (response == "changepasssuccess") {
       swal({

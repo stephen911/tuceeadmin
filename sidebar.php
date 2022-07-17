@@ -8,11 +8,7 @@
                 <ul class="sidebar-menu sm-button-bg">
                     <?php
                     if ($user['type'] == 'assist') {
-                        echo '<li class="sidebar-menu-item active">
-                        <a class="sidebar-menu-button" href="dashboard.php">
-                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Dashboard
-                        </a>
-                    </li>
+                        echo '
                     <li class="sidebar-menu-item ">
                             <a class="sidebar-menu-button" href="users.php">
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
