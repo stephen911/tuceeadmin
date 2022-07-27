@@ -1,6 +1,7 @@
 <?php
 include 'functions.php';
 checker();
+$user1 = adminusers();
 $user = users();
 //  var_dump($_SESSION['id']);
 ?>

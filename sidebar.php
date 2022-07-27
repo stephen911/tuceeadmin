@@ -7,14 +7,14 @@
                 <div class="sidebar-heading">APPLICATIONS</div>
                 <ul class="sidebar-menu sm-button-bg">
                     <?php
-                    if ($user['type'] == 'assist') {
+                    if ($user1['type'] == 'assist') {
                         echo '
                     <li class="sidebar-menu-item ">
                             <a class="sidebar-menu-button" href="users.php">
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
                             </a>
                         </li>';
-                    }else if($user['type'] == 'pay'){
+                    }else if($user1['type'] == 'pay'){
                         echo '
                     <li class="sidebar-menu-item ">
                             <a class="sidebar-menu-button" href="users.php">
@@ -66,6 +66,11 @@
                     <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="training.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Training Date
+                        </a>
+                    </li>
+                    <li class="sidebar-menu-item ">
+                        <a class="sidebar-menu-button" href="creditpoints.php">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Upload Credit Points
                         </a>
                     </li>';
                     }

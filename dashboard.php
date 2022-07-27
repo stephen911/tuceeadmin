@@ -1,7 +1,8 @@
 <?php
 include 'functions.php';
 checker();
-$user = adminusers();
+$user1 = adminusers();
+$user = users();
 //  var_dump($_SESSION['id']);
 ?>
 <!DOCTYPE html>
@@ -169,7 +170,7 @@ $user = adminusers();
                                     <i class="material-icons text-muted-light">account_box</i>
                                 </div>
                                 <div class="media-body" style="min-width: 180px">
-                                    Your are welcome Admin!</strong>
+                                    Your are welcome Admin!
                                 </div>
                                 <!-- <div class="media-right mt-2 mt-xs-plus-0">
                                         <a class="btn btn-sm btn-danger"

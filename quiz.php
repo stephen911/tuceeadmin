@@ -3,6 +3,7 @@ include 'functions.php';
 include 'yolkpay.php';
 $yolk = new YolkPay();
 checker();
+$user1 = adminusers();
 $user = users();
 //  var_dump($_SESSION['id']);
 

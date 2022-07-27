@@ -1,7 +1,8 @@
 <?php
 include 'functions.php';
 checker();
-$user = adminusers();
+$user1 = adminusers();
+$user = users();
 //  var_dump($_SESSION['id']);
 ?>
 <!DOCTYPE html>
@@ -188,7 +189,7 @@ $user = adminusers();
                             <table id="example" style="background-color:#fff;">
                                 <thead>
                                 <?php
-                        if ($user['type'] == '') {
+                        if ($user1['type'] == '') {
                             echo '<tr>
                             <th>ID</th>
 
@@ -206,7 +207,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
-
+                            <th>Credit Points</th>
                             <th>Confirmation</th>
                             <th>Enrollment</th>
 
@@ -246,7 +247,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
-
+                            <th>Credit Points</th>
                             <th>Confirmation</th>
                             <th>Enrollment</th>
                             <th>Food</th>
@@ -268,7 +269,7 @@ $user = adminusers();
 
                             <!-- <th style="width: 24px;"></th> -->
                         </tr>';
-                        } else if($user['type'] == 'pay'){
+                        } else if($user1['type'] == 'pay'){
 
                             echo '<tr>
                             <th>ID</th>
@@ -287,6 +288,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
+                            <th>Credit Points</th>
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>
@@ -328,6 +330,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
+                            <th>Credit Points</th>
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>
@@ -367,6 +370,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
+                            <th>Credit Points</th>
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>
@@ -406,6 +410,7 @@ $user = adminusers();
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
+                            <th>Credit Points</th>
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>

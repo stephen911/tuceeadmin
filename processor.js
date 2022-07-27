@@ -154,6 +154,19 @@ $(function () {
       }).then(function (result) {
         window.location = "users.php";
       });
+    } else if (response == "pointsadded") {
+      swal({
+        title: "Success",
+        text: "Credit points added Successfully",
+        timer: 1000,
+        type: "success",
+        padding: "2em",
+        onOpen: function () {
+          swal.showLoading();
+        },
+      }).then(function (result) {
+        window.location = "users.php";
+      });
     } else if (response == "registered") {
       swal({
         title: "Success",

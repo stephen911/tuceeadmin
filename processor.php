@@ -58,6 +58,13 @@ require 'functions.php';
             settdate($tdate, $district);
 
             break;
+
+        case 'credit':
+            // extract($_POST);
+            // extract($_POST);
+            credit();
+
+            break;
         
 
         case 'login':
