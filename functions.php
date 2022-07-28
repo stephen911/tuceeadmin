@@ -131,11 +131,38 @@ function show($cert)
 }
 
 
+function showcredit($credit)
+{
+    include 'starter.php';
+    // $id = $_GET['id'];
+    $confij = mysqli_query($conn, "UPDATE users SET creditconfirm ='$credit'");
+    if ($confij) {
+        echo 'Updated Successfully';
+    } else {
+        echo 'Failed to update record . Try again';
+    }
+}
+
+
+
 function showquiz($quiz)
 {
     include 'starter.php';
     // $id = $_GET['id'];
     $confiu = mysqli_query($conn, "UPDATE users SET quiz ='$quiz'");
+    if ($confiu) {
+        echo 'Updated Successfully';
+    } else {
+        echo 'Failed to update record . Try again';
+    }
+}
+
+
+function showcreditconfirm($creditconfirm, $district)
+{
+    include 'starter.php';
+    // $id = $_GET['id'];
+    $confiu = mysqli_query($conn, "UPDATE users SET creditconfirm ='$creditconfirm' WHERE district='$district'");
     if ($confiu) {
         echo 'Updated Successfully';
     } else {

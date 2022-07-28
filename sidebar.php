@@ -14,15 +14,14 @@
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
                             </a>
                         </li>';
-                    }else if($user1['type'] == 'pay'){
+                    } else if ($user1['type'] == 'pay') {
                         echo '
                     <li class="sidebar-menu-item ">
                             <a class="sidebar-menu-button" href="users.php">
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Users
                             </a>
                         </li>';
-                    }
-                     else {
+                    } else {
                         echo '<li class="sidebar-menu-item active">
                         <a class="sidebar-menu-button" href="dashboard.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i> Dashboard
@@ -48,31 +47,82 @@
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">money</i> Transactions
                         </a>
                     </li>
-                    <li class="sidebar-menu-item ">
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button sidebar-js-collapse" data-toggle="collapse" href="#apply_menu2">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">school</i> Show / Hide
+
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu sm-indent collapse" id="apply_menu2">
+
+                            <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="cert.php">
-                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Show / Hide Cert
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Certificate
                         </a>
                     </li>
                     <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="quiz.php">
-                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Show / Hide Quiz and Eval
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Quiz and Evaluation
                         </a>
                     </li>
+                    <li class="sidebar-menu-item ">
+                        <a class="sidebar-menu-button" href="creditconfirm.php">
+                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Credit Confirm Card
+                        </a>
+                    </li>
+                    
+                                
+
+
+
+                    </ul>
+
+                    
+                    <ul class="sidebar-menu">
+                        <li class="sidebar-menu-item active">
+                            <a class="sidebar-menu-button sidebar-js-collapse" data-toggle="collapse" href="#apply_menu">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">school</i> Upload Documents
+
+                                <span class="ml-auto sidebar-menu-toggle-icon"></span>
+                            </a>
+                            <ul class="sidebar-submenu sm-indent collapse" id="apply_menu">
+
+                            <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="creditpoints.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Credit Points
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="attendance.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Attendance
+                            </a>
+                        </li>
+                        <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="payup.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Payment
+                            </a>
+                        </li>
+                                
+
+
+
+                    </ul>
+
                     <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="food.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  District Stats
                         </a>
                     </li>
+                    
                     <li class="sidebar-menu-item ">
                         <a class="sidebar-menu-button" href="training.php">
                             <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Training Date
                         </a>
                     </li>
-                    <li class="sidebar-menu-item ">
-                        <a class="sidebar-menu-button" href="creditpoints.php">
-                            <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>  Upload Credit Points
-                        </a>
-                    </li>';
+                   
+                    
+                    ';
                     }
                     ?>
                     <!-- <li class="sidebar-menu-item active">

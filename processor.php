@@ -24,6 +24,7 @@ require 'functions.php';
             show($cert);
 
             break;
+    
         
         case 'showquiz':
             extract($_POST);
@@ -44,11 +45,26 @@ require 'functions.php';
             foodstats($district);
 
             break;
+        
+        
+        case 'showcredit':
+            extract($_POST);
+            // extract($_POST);
+            showcredit($credit);
+
+            break;
 
         case 'showdiscert':
             extract($_POST);
             // extract($_POST);
             showdiscert($discert, $district);
+
+            break;
+
+        case 'showcreditconfirm':
+            extract($_POST);
+            // extract($_POST);
+            showcreditconfirm($creditconfirm, $district);
 
             break;
 
