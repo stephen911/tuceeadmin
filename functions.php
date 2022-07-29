@@ -728,6 +728,7 @@ function registered()
         <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
         <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
         <td>' . $row['tdate'] . '</td>
+        <td>' . $row['lincesed'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td> ';
         if (isset($row2['dateadded'])) {
             echo '<td>' . $row2['dateadded'] . '</td>';

@@ -203,7 +203,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
-                            <!-- <th>License Number</th> -->
+                            <th>License Number</th>
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
                             <th>Payment Date</th>
@@ -243,6 +243,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
+                            <th>License Number</th>
                             <!-- <th>License Number</th> -->
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
@@ -284,6 +285,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
+                            <th>License Number</th>
                             <!-- <th>License Number</th> -->
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
@@ -326,6 +328,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
+                            <th>License Number</th>
                             <!-- <th>License Number</th> -->
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
@@ -366,6 +369,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
+                            <th>License Number</th>
                             <!-- <th>License Number</th> -->
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
@@ -406,6 +410,7 @@ $user = users();
                             <th>Region</th>
                             <th>District</th>
                             <th>Training Date</th>
+                            <th>License Number</th>
                             <!-- <th>License Number</th> -->
                             <!-- <th>Name of school</th> -->
                             <th>Payment Status</th>
