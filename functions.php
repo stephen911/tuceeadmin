@@ -741,7 +741,7 @@ function registered()
         <td>' . $row['enroll'] . '</td>
 
 
-        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['ntcemailpost'] . '</td>
 
  
         <td>' . $row['attendance'] . '</td>
@@ -801,7 +801,7 @@ function paymentregistered()
         <td>' . $row['enroll'] . '</td>
 
 
-        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['ntcemailpost'] . '</td>
 
  
         <td>' . $row['attendance'] . '</td>
@@ -857,7 +857,7 @@ function assistregistered()
         <td>' . $row['enroll'] . '</td>
 
 
-        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['ntcemailpost'] . '</td>
 
  
         <td>' . $row['attendance'] . '</td>
@@ -898,7 +898,7 @@ function paidusers()
         <td>' . $row['lincesed'] . '</td>
         <td>' . $row['nameofschool'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td>  
-        <td>' . $row['foodpref'] . '</td>
+        <td>' . $row['ntcemailpost'] . '</td>
         <td>' . $row['dateadded'] . '</td>
         <td><a class="btn btn-success" href="update_user.php?id=' . $row['id'] . '"><i class="fa fa-edit"></i></a></td>      
         <td><a class="btn btn-danger" href="delete_user.php?id=' . $row['id'] . '"><i class="fa fa-trash"></i></a></td>      

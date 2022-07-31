@@ -212,7 +212,7 @@ $user = users();
                             <th>Enrollment</th>
 
 
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
@@ -251,7 +251,7 @@ $user = users();
                             <th>Credit Points</th>
                             <th>Confirmation</th>
                             <th>Enrollment</th>
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
@@ -296,7 +296,7 @@ $user = users();
                             <th>Enrollment</th>
 
 
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
@@ -337,7 +337,7 @@ $user = users();
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
@@ -380,7 +380,7 @@ $user = users();
                             <th>Enrollment</th>
 
 
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
@@ -419,7 +419,7 @@ $user = users();
 
                             <th>Confirmation</th>
                             <th>Enrollment</th>
-                            <th>Food</th>
+                            <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>
 
