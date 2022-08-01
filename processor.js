@@ -204,7 +204,7 @@ $(function () {
           swal.showLoading();
         },
       }).then(function (result) {
-        window.location = "users.php";
+        // window.location = "users.php";
       });
     } else if (response == "userdele") {
       swal({
