@@ -103,6 +103,11 @@
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Payment
                             </a>
                         </li>
+                        <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="user_upload.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Upload User
+                            </a>
+                        </li>
                                 
 
 
