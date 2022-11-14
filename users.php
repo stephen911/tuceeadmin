@@ -209,8 +209,7 @@ $user = users();
                             <th>Payment Status</th>
                             <th>Payment Date</th>
                             <th>Credit Points</th>
-                            <th>Confirmation</th>
-                            <th>Enrollment</th>
+                           
 
 
                             <th>NTC Email</th>
@@ -251,8 +250,7 @@ $user = users();
                             <th>Payment Status</th>
                             <th>Payment Date</th>
                             <th>Credit Points</th>
-                            <th>Confirmation</th>
-                            <th>Enrollment</th>
+                            
                             <th>NTC Email</th>
                             <!-- <th>Payment Date</th> -->
                             <th>Attendance</th>

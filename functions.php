@@ -738,8 +738,7 @@ function registered()
         }
         echo '
         <td>' . $row['points'] . '</td>
-        <td>' . $row['confirm'] . '</td>
-        <td>' . $row['enroll'] . '</td>
+        
 
 
         <td>' . $row['ntcemailpost'] . '</td>
