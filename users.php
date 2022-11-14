@@ -202,6 +202,7 @@ $user = users();
                             <th>Contact</th>
                             <th>Region</th>
                             <th>District</th>
+                            <th>Modality</th>
                             <th>Training Date</th>
                             <th>License Number</th>
                             <!-- <th>Name of school</th> -->
@@ -242,6 +243,7 @@ $user = users();
                             <th>Contact</th>
                             <th>Region</th>
                             <th>District</th>
+                            <th>Modality</th>
                             <th>Training Date</th>
                             <th>License Number</th>
                             <!-- <th>License Number</th> -->
@@ -368,6 +370,7 @@ $user = users();
                             <th>Contact</th>
                             <th>Region</th>
                             <th>District</th>
+                            <th>Modality</th>
                             <th>Training Date</th>
                             <th>License Number</th>
                             <!-- <th>License Number</th> -->
@@ -409,6 +412,7 @@ $user = users();
                             <th>Contact</th>
                             <th>Region</th>
                             <th>District</th>
+                            <th>Modality</th>
                             <th>Training Date</th>
                             <th>License Number</th>
                             <!-- <th>License Number</th> -->

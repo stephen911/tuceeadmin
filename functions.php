@@ -727,6 +727,7 @@ function registered()
         <td>' . $row['contact'] . '</td>
         <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
         <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
+        <td><span class="js-lists-values-employee-district">' . $row['modality'] . '</span>
         <td>' . $row['tdate'] . '</td>
         <td>' . $row['lincesed'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td> ';
@@ -844,6 +845,7 @@ function assistregistered()
         <td>' . $row['contact'] . '</td>
         <td><span class="js-lists-values-employee-title">' . $row['region'] . '</span></td>
         <td><span class="js-lists-values-employee-district">' . $row['district'] . '</span>
+        <td><span class="js-lists-values-employee-district">' . $row['modality'] . '</span>
         <td>' . $row['tdate'] . '</td>
         <td><span class="js-lists-values-employee-paid">' . $row['paystatus'] . '</span></td> ';
         if (isset($row2['dateadded'])) {
