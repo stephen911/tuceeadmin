@@ -115,7 +115,7 @@ $user = users();
 
 
     <!-- Preloader -->
-    <link type="text/css" href="assets/vendor/spinkit.css" rel="stylesheet">
+    <!-- <link type="text/css" href="assets/vendor/spinkit.css" rel="stylesheet"> -->
 
     <!-- App CSS -->
     <link type="text/css" href="assets/css/app.css" rel="stylesheet">

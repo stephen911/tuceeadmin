@@ -62,15 +62,17 @@ if (isset($_POST['submit']))
                 // }
                 $check = mysqli_query($conn, $query);
  
-                if ($check->num_rows > 0)
+                if ($check)
                 {
                     // $ins = mysqli_query($conn, "INSERT INTO users (name,email,password,dateadded) VALUES('$name','$email','$password','$dd')");
-                    echo "pointsadded";
+                    echo "pointsaddedneat";
                 }
                 else
                 {
                     //  mysqli_query($conn, "INSERT INTO users (name, email, phone, created_at, updated_at, status) VALUES ('" . $name . "', '" . $email . "', '" . $phone . "', NOW(), NOW(), '" . $status . "')");
-                    echo "pointsfailed";
+                    echo '<script>alert("Users added successfuly ");
+                        window.location="dashboard.php";
+                    </script>';
                 }
             }
  

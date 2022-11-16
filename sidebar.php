@@ -108,6 +108,11 @@
                                 <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Upload User
                             </a>
                         </li>
+                        <li class="sidebar-menu-item ">
+                            <a class="sidebar-menu-button" href="bulk_del.php">
+                                <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">account_box</i>Delete User
+                            </a>
+                        </li>
                                 
 
 

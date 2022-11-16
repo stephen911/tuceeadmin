@@ -126,7 +126,7 @@ $(function () {
           swal.showLoading();
         },
       }).then(function (result) {
-        window.location = "users.php";
+        window.location = "dashboard.php";
       });
     } else if (response == "changepasssuccess") {
       swal({
