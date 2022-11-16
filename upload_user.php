@@ -65,12 +65,14 @@ if (isset($_POST['submit']))
                 if ($check)
                 {
                     // $ins = mysqli_query($conn, "INSERT INTO users (name,email,password,dateadded) VALUES('$name','$email','$password','$dd')");
-                    echo "pointsaddedneat";
+                    echo '<script>alert("Users added successfuly :)");
+                    window.location="dashboard.php";
+                </script>';
                 }
                 else
                 {
                     //  mysqli_query($conn, "INSERT INTO users (name, email, phone, created_at, updated_at, status) VALUES ('" . $name . "', '" . $email . "', '" . $phone . "', NOW(), NOW(), '" . $status . "')");
-                    echo '<script>alert("Users added successfuly ");
+                    echo '<script>alert("Users added successfully :(");
                         window.location="dashboard.php";
                     </script>';
                 }
